@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  background: url(../images/4.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding-top: 2%;
+ 
+}
+.signUpHeader {
+  text-align: center;
+  color:white;
+  font-size: 24px;
+}
+.signUpForm {
+  width: 25%;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px) saturate(120%);
+  border: none;
+  transition: 0.5s linear;
+}
+.signUpForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0px;
+  width: 100%;
+  background: none;
+  padding: 24px;
+  margin: 0px;
+}
+.signUpForm p {
+  color: rgb(84, 66, 50);
+  font-size: 20px;
+}
+.signUpForm form input {
+  border: none;
+  padding: 12px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgb(32, 145, 158);
+  background: none;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0px;
+}
+.signUpForm form input:focus {
+  outline: none;
+
+}
+ .signUpForm form div{
+  background: none;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 12px;
+
+}
+.signUpForm button {
+  padding: 20px;
+  width: 50%;
+  align-self: center;
+  border:none;
+  border-radius: 24px;
+  cursor: pointer;
+  color: brown;
+  background-color: rgb(227, 193, 138);
+  transition: 0.5s linear;
+ 
+}
+.signUpForm button:hover {
+  background-color: rgb(251, 228, 191);
+  font-weight: bold;
+}
+.checkings, .emptyField {
+  height: 12px;
+}
+.checkings p, .emptyField p {
+  font-size: 12px;
+  color: rgb(197, 25, 25);
+  padding: 0px;
+  margin: 0px;
+}

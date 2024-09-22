@@ -1,0 +1,645 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.overallBody {
+  margin: 14px;
+  background-color:  rgb(245, 245, 230);
+  border-radius: 24px;
+  padding: 24px;
+}
+.logo p {
+
+  font-family: garamond;
+}
+.logo img {
+  width: 35px;
+  height: 25px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30%;
+  align-items: center;
+}
+.navImage {
+  max-width: 20px;
+  border-radius: 50%;
+}
+nav a {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  text-decoration: none;
+  
+}
+nav a p {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0px;
+}
+.navList ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none ;
+}
+.navList li a{
+  display: flex;
+  font-size: 20px;
+
+  background-color: none;
+  padding: 12px;
+  border-radius: 10px;
+}
+.homeSec, .gallerySec, 
+.aboutSec, .contactSec {
+  background-color: rgb(222, 154, 115);
+  color: white;
+  font-weight: bold;
+}
+.homeSec:hover, .gallerySec:hover,
+.aboutSec:hover, .contactSec:hover {
+  background-color: rgb(241, 181, 147);
+  color: rgb(179, 179, 169);
+}
+section {
+  display: flex;
+  gap: 14px;
+}
+section button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+button {
+  cursor: pointer;
+}
+.navIconContainer {
+  border: 0.5px solid black;
+  padding: 8px;
+  width: 35px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navIconContainer:hover {
+  
+}
+.navButton {
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: rgb(202, 121, 81);
+}
+.navButton button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.headerLine1 {
+  margin: 0px 24px;
+  padding: 0.5px;
+  width: 96%;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContainer {
+  padding: 12px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding-top: 3%;
+  padding-left: 30px;
+}
+main h1 {
+  font-size: 100px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, brown, rgb(165, 81, 42));
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0px 0px;
+  font-family: garamond;
+}
+
+main h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(137, 87, 43);
+  margin-bottom: 24px;
+}
+
+main p {
+  text-align: justify;
+  color: rgb(137, 87, 43);
+  padding-bottom: 14px;
+}
+
+.mainButton1 {
+  padding: 16px 12px;
+  background-color: brown;
+  color:white;
+  border-radius: 24px;
+  margin: 24px 0px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.mainButton1:hover {
+  background-color: rgb(209, 84, 84);
+  color:grey;
+}
+.mainButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 6px;
+}
+.mainButtonContainer a {
+  text-decoration: none;
+}
+.mainButtonContainer1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main button {
+  background: transparent;
+  border: none;
+  color: brown;
+}
+
+.mainImage {
+  background-color: rgb(215, 215, 184);
+  width: 40%;
+  margin: 40px 24px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mainImageSrc {
+  padding-left: 24px;
+  width: 100%;
+  height: auto;
+  text-align:justify;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+footer {
+  display: flex;
+  gap: 35%;
+  background-image: linear-gradient(to right, brown, rgb(165, 81, 42));
+  color: white;
+  padding: 12px;
+  transform: rotate(0.001turn)
+}
+.overlay1 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loginForm {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  right: 20%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: beige;
+  padding: 24px;
+  width: 400px;
+  border-radius: 24px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: 1s linear;
+}
+
+.loginForm h1 {
+  text-align: center;
+  padding: 24px;
+  color: rgb(165, 91, 42);
+  filter: blur(0px);
+}
+.loginForm span {
+  color: brown;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  filter: blur(0px);
+}
+.loginForm input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.loginForm button {
+  margin: 24px;
+  width: 80%;
+  align-self: center;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(233, 177, 66);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  margin-top: 0px;
+}
+.loginForm button:hover {
+  background-color: rgb(242, 197, 108);
+  color: brown;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.loginForm p {
+  text-align: center;
+  font-size:12px;
+  padding: 0px;
+  margin: 0px;
+}
+.exitLogin {
+  align-self: flex-end;
+}
+.warnings p{
+  padding: 0px;
+  margin: 0px;
+  color:red;
+  font-size: 12px;
+}
+.navButton p {
+  color: white;
+  font-weight: bold;
+}
+.mainButtonContainer1 p {
+  padding: 0px;
+  margin: 0px;
+  margin: 10px 0px;
+}
+@media only screen and (max-width: 800px) {
+
+  body {
+    width: 100%;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    height: 100%;
+  }
+  .overallBody {
+    margin: 2px;
+    background-color:  rgb(245, 245, 230);
+    border-radius: 24px;
+    padding:4px;
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+    align-items: flex-start;
+
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  nav img{
+    width: 100px;
+    height: 30px;
+    align-self: center;
+  }
+
+  nav a {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    
+  }
+  nav a p {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+    align-self: center;
+  }
+
+  .navList ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin:0px;
+    gap: 8px;
+    list-style-type: none ;
+    padding: 12px 0px;
+  }
+  .navList li a{
+    display: flex;
+    font-size: 18px;
+    background-color: none;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .homeSec, .gallerySec, 
+  .aboutSec, .contactSec {
+    background-color: rgb(222, 154, 115);
+    color: white;
+    font-weight: bold;
+  }
+  .homeSec:hover, .gallerySec:hover,
+  .aboutSec:hover, .contactSec:hover {
+    background-color: rgb(241, 181, 147);
+    color: rgb(179, 179, 169);
+  }
+  section {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  section button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+  }
+  button {
+    cursor: pointer;
+  }
+  .navIconContainer {
+    border: 0.5px solid black;
+    padding: 8px;
+    border-radius: 30px;
+  }
+  .navButton {
+    border: none;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: rgb(202, 121, 81);
+  }
+  .navButton button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+  .headerLine {
+    padding: 0.5px;
+    background-color: brown;
+    width: 100%;
+  }
+  .headerLine1 {
+    margin: 0px 24px;
+    padding: 0.5px;
+    width: 87%;
+    background-color: black;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainContainer {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    padding-top: 3%;
+    padding-left: 25px;
+  }
+  
+  main h1 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    background-image: linear-gradient(to right, brown, rgb(165, 81, 42));
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0px 0px;
+  }
+  main h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(137, 87, 43);
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  
+  main p {
+    text-align: left;
+    color: rgb(137, 87, 43);
+    padding-bottom: 14px;
+    margin-right:20px;
+  }
+  
+  .mainButton1 {
+    padding: 16px 12px;
+    background-color: brown;
+    color:white;
+    border-radius: 24px;
+    margin: 24px 0px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+  }
+  .mainButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .mainButtonContainer1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    padding: 4px 14px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main button {
+    background: transparent;
+    border: none;
+    color: brown;
+  }
+  .mainImage {
+    background-color: rgb(215, 215, 184);
+    width: 90%;
+    margin: 0px;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+    align-self: center;
+    margin-right: 12px;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .mainImageSrc {
+    width: 100%;
+    height: auto;
+    text-align:justify;
+  }
+  footer {
+    display: flex;
+    gap: 10%;
+    background-image: linear-gradient(to right, brown, rgb(165, 81, 42));
+    color: white;
+    padding: 12px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 50%;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+    cursor: pointer;
+  }
+  .loginForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .loginForm {
+    position: absolute;
+    margin: 0px;
+    top: 50%;
+    right: -38%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+    padding: 24px;
+    width: 350px;
+    border-radius: 24px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 1s linear;
+  }
+  
+  .loginForm h1 {
+    text-align: center;
+    padding: 24px;
+    color: rgb(165, 91, 42);
+    filter: blur(0px);
+  }
+  .loginForm span {
+    color: brown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    filter: blur(0px);
+  }
+  .loginForm input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .loginForm button {
+    margin: 24px;
+    width: 80%;
+    align-self: center;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(233, 177, 66);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    margin-top: 0px;
+  }
+  .loginForm button:hover {
+    background-color: rgb(242, 197, 108);
+    color: brown;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  .loginForm p {
+    text-align: center;
+    font-size:12px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .exitLogin {
+    align-self: flex-end;
+  }
+  
+}

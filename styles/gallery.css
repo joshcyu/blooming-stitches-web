@@ -1,0 +1,919 @@
+.captionsAndUpload {
+  gap: 14px;
+  padding: 24px;
+  height: auto;
+  background-color: white;
+  width: 20%;
+  margin: 24px;
+  border-radius: 24px;
+  margin-left: 38%;
+  margin-top:12%;
+}
+.division {
+  padding: 0.1px;
+  background-color: rgb(64, 64, 64);
+  margin: 12px 0px;
+}
+.captionStyle {
+  border: none;
+  padding: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+}
+.captionStyle:focus {
+  outline: none;
+}
+.uploadsContainer {
+  background-color: white;
+  border:none;
+  display: flex;
+
+}
+.uploadsContainer label{
+  font-size:50px;
+  color: rgb(78, 76, 76);
+  padding: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+.uploadsContainer label:hover {
+  background-color:rgb(240, 234, 234);
+}
+.uploadsContainer input {
+  display: none;
+}
+.overlay2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.submitUpload {
+  display: flex;
+  justify-content: flex-end;
+}
+.submitUpload a {
+  text-decoration: none;
+  color: white;
+  padding:12px;
+  background-color: rgb(72, 148, 254);
+  border-radius: 12px;
+}
+.submitUpload a:hover {
+  background-color: rgb(125, 178, 252);
+}
+
+.galleryMain {
+  display: flex;
+}
+.mainGalleryContainer {
+  display: flex;
+  margin: 24px 12px ;
+  flex-direction: column;
+  background-color: none;
+  width: 30%;
+  height: auto;
+  margin-right: 2%;
+  background-color: rgb(247, 247, 229);
+  padding: 120px 30px;
+  border-radius: 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.mainGalleryContainer p {
+  width: 100%;
+}
+.mainGalleryImages {
+  padding: 24px;
+  background-color: rgb(235, 215, 184);
+  border-radius: 24px;
+  width: 75%;
+  height: auto;
+  margin: 24px 24px;
+  justify-content: center;
+  align-items: center;
+}
+.galleryImagesContainer {
+  background: none;
+  padding: 12px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 100%;
+  justify-content: flex-end;
+
+}
+.image1Container, .image2Container, .image3Container,
+.image4Container, .image5Container, .image6Container {
+  width: 5%;
+  padding: 0px;
+  gap: 1px;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+.image1 {
+  background-image: url('../images-boquets/bouquet5.JPG');
+  background-size: contain;
+  background-color: rgb(255, 255, 195);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+#image2 {
+  background-image: url('../images-boquets/bouquet2.PNG');
+  background-size: contain;
+  background-color: rgb(255, 255, 204);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+#image3 {
+  background-image: url('../images-boquets/bouquet3.PNG');
+  background-size: contain;
+  background-color: rgb(192, 192, 167);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+#image4 {
+  background-image: url('../images-boquets/bouquet4.JPG');
+  background-size: contain;
+  background-color: rgb(144, 144, 129);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+#image5 {
+  background-image: url('../images-flowers/Main5.jpg');
+  background-size: contain;
+  background-color: rgb(127, 127, 125);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+#image6 {
+  background-image: url('../images-flowers/Main6.PNG');
+  background-size: contain;
+  background-color: rgb(110, 110, 109);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1s linear;
+}
+
+.expandImage {
+  width: 100%;
+  height: 100%;
+}
+
+.text1, .text2, .text3,
+.text4, .text5, .text6 {
+  position:relative;
+  font-size: 16px;
+  margin-top: 6px;
+  margin-left: 24px;
+  width: 80%;
+  pointer-events: none;
+  opacity: 0%;
+  padding: 12px;
+  color: rgb(194, 103, 0);
+  text-align: justify;
+  font-size: 12px;
+  transition: 1s linear;
+}
+.showText {
+  transition: 1s linear;
+  opacity: 100%;
+  text-shadow: 4px 4px 16px rgba(78,61,45,0.6);
+}
+.galleryMain1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10%;;
+}
+.uploadImages {
+  width: 95%;
+  margin: 24px 24px;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+.uploadImageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 24px;
+}
+.uploadImageHeader > h2 {
+  font-size: 40px;
+  color: rgb(68, 68, 53);
+}
+.uploadsContainer {
+  margin: 24px 12px;
+}
+.uploadImageHeader a {
+  text-decoration: none;
+  padding: 0px;
+}
+.uploadImageHeader a:hover {
+  color: green;
+}
+.uploadsContainer input {
+  display: none;
+}
+.uploadsContainer label {
+  margin: 24px 12px;
+  padding: 12px;
+  border: 2px dashed white;
+  border-radius: 12px;
+  cursor:pointer;
+}
+.uploadsContainer label:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.uploadsText {
+  margin: 8px 8px;
+  padding: 12px 4px;
+}
+.uploadsText button {
+  color: brown;
+  background-color: rgb(240, 240, 202);
+  padding: 12px 8px;
+  border-radius: 12px;
+  font-family:Arial, Helvetica, sans-serif
+}
+.uploadsText button:hover {
+  background-color: rgb(250, 250, 233);
+  color: grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.outputsContainer, .inputsContainer {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 1.4%;
+  background-color: white;
+  padding: 8px;
+}
+.itemsContainer {
+  padding: 2px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crochetImage0, .crochetImage1, .crochetImage2, .crochetImage3, .crochetImage4, .crochetImage5  {
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all ease 0.5s;
+}
+
+.crochetImage0:hover, .crochetImage1:hover, .crochetImage2:hover, .crochetImage3:hover, .crochetImage4:hover, .crochetImage5:hover, .crochetImage6:hover {
+  transition: all ease 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.crochetImage2:hover {
+  transition: all ease 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.itemsContainer p {
+  margin: 16px 0px;
+}
+.messageUs {
+  text-decoration: none;
+  margin-bottom: 12px;
+  color: white;
+  background-color: grey;
+  padding: 4px 6px;
+  border-radius: 50%;
+  opacity: 20%;
+  border: 0.5px solid white;
+}
+.messageUs:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.imageSliderContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.imageSlider {
+  display: flex;
+  width: 50%;
+  height: 450px;
+  margin: 24px 50px;
+  align-items: center;
+  gap: 12px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 4px;
+}
+.imageSlider h2 {
+  padding: 14px;
+  color: beige;
+  margin-right: 20px;
+}
+.imageSlider p {
+  text-align: left;
+  padding: 12px;
+  color: white;
+}
+.slider1 {
+  transform: skewY(0deg);
+  width: 100%;
+  height: 100%;
+  background-image: url('../gifs/sunflower-gif.gif');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-color: rgb(55, 55, 55);
+  padding: 0px;
+  margin: 0px;
+}
+.slider2 {
+  transform: skewY(90deg);
+  width: 0%;
+  height: 100%;
+  background-image: url('../gifs/forgetmenot-gif.gif');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-color: rgb(55, 55, 55);
+  padding: 0px;
+  margin: 0px;
+}
+.showSlide {
+  transform: skewY(0deg);
+  width: 100%;
+
+}
+.hideSlide {
+  transform: skewY(-90deg);
+  width: 0%;
+
+}
+.buttonContainer {
+
+  padding: 24px;
+  gap: 24px;
+}
+.buttonContainer button {
+  margin: 24px;
+  padding: 12px 14px;
+  background-color: white;
+  color: grey;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.buttonContainer button:hover {
+  background-color: rgb(173, 173, 173);
+  border: 1px solid white;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@keyframes showw {
+  0% {
+    opacity: 1%;
+  } 100% {
+    opacity: 100%;
+  }
+}
+
+.itemsContainer p {
+  margin-top: 12px;
+  font-size: 20px;
+  color: grey;
+}
+.itemsContainer span {
+  color: rgb(92, 230, 92);
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.newContainer {
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin: 12px;
+}
+.newContainer img {
+  border-radius: 12px;
+  width: 100%;
+  height:  100%;
+}
+.imagesTitle {
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+}
+.deletePost {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  backdrop-filter: red;
+}
+.deleteImageStyle {
+  font-size: 20px;
+  text-align: end;
+  cursor: pointer;
+  color: red;
+  border-radius: 4px;
+  padding: 12px;
+
+}
+.cancelButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.cancelButton button {
+  border: none;
+  color: black;
+  background-color: rgb(249, 195, 195);
+  border-radius: 4px;
+  padding: 4px;
+}
+.cancelButton button:hover {
+  color: white;
+  background-color: rgb(129, 87, 87);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.overlay3 {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.clickContainer {
+  width: 650px;
+  height: 700px;
+  background-color:  white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+}
+.clickContainer img {
+  background-size: cover;
+  border-radius: 4px;
+  width: 50%;
+  height: auto;
+  background-color: green;
+}
+.clickContainerImage {
+  background-color: lavender;
+  align-self: center;
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divisionContainer {
+  padding: 0.5px;
+  background-color: grey;
+  margin: 12px 12px;
+}
+.clickContainer p {
+  margin: 12px 24px;
+  font-family: garamond;
+}
+.clickContainer span {
+  padding: 4px;
+  margin: 0px;
+  margin-right: 12px;
+  align-self: flex-end;
+  color: red;
+}
+
+@media only screen and (max-width: 800px) {
+  .galleryMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainGalleryContainer {
+    display: flex;
+    margin: 24px 12px ;
+    flex-direction: column;
+    background-color: none;
+    width: 93%;
+    height: auto;
+    margin-right: 2%;
+    background-color: rgb(247, 247, 229);
+    padding: 60px 30px;
+    border-radius: 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .mainGalleryContainer p {
+    width: 100%;
+  }
+  .mainGalleryImages {
+    padding: 24px;
+    background-color: rgb(234, 197, 136);
+    border-radius: 24px;
+    width: 88%;
+    height: auto;
+    margin: 24px 24px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .galleryImagesContainer {
+    background: none;
+    padding: 12px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 100%;
+    justify-content: flex-end;
+  
+  }
+  .image1Container, .image2Container, .image3Container,
+  .image4Container, .image5Container, .image6Container {
+    width: 100%;
+    padding: 0px;
+    gap: 0px;
+    height: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  .image1 {
+    background-image: url('../images-boquets/bouquet5.JPG');
+    background-size: contain;
+    background-color: rgb(255, 255, 195);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  #image2 {
+    background-image: url('../images-boquets/bouquet2.PNG');
+    background-size: contain;
+    background-color: rgb(255, 255, 204);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  #image3 {
+    background-image: url('../images-boquets/bouquet3.PNG');
+    background-size: contain;
+    background-color: rgb(192, 192, 167);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  #image4 {
+    background-image: url('../images-boquets/bouquet4.JPG');
+    background-size: contain;
+    background-color: rgb(144, 144, 129);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  #image5 {
+    background-image: url('../images-flowers/Main5.jpg');
+    background-size: contain;
+    background-color: rgb(127, 127, 125);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  #image6 {
+    background-image: url('../images-flowers/Main6.PNG');
+    background-size: contain;
+    background-color: rgb(110, 110, 109);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s linear;
+  }
+  
+  .expandImage {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .text1, .text2, .text3,
+  .text4, .text5, .text6 {
+    position:relative;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 24px;
+    width: 80%;
+    pointer-events: none;
+    opacity: 0%;
+    padding: 12px;
+    color: rgb(194, 103, 0);
+    text-align: justify;
+    font-size: 12px;
+    transition: 1s linear;
+  }
+  .showText {
+    transition: 1s linear;
+    opacity: 100%;
+    text-shadow: 4px 4px 16px rgba(78,61,45,0.6);
+  }
+  .galleryMain1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;;
+  }
+  .uploadImages {
+    width: 84%;
+    margin: 24px 24px;
+    margin-left: 28px;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  .uploadImageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px;
+  }
+  .uploadImageHeader > h2 {
+    font-size: 40px;
+    color: rgb(68, 68, 53);
+    margin: 24px 0px;
+  }
+  .uploadsContainer {
+    margin: 24px 12px;
+  }
+  .uploadImageHeader a {
+    text-decoration: none;
+    padding: 0px;
+  }
+  .uploadImageHeader a:hover {
+    color: green;
+  }
+  .uploadsContainer input {
+    display: none;
+  }
+  .uploadsContainer label {
+    margin: 24px 12px;
+    padding: 12px;
+    border: 2px dashed white;
+    border-radius: 12px;
+    cursor:pointer;
+  }
+  .uploadsContainer label:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .uploadsText {
+    margin: 8px 8px;
+    padding: 12px 4px;
+  }
+  .uploadsText button {
+    color: brown;
+    background-color: rgb(240, 240, 202);
+    padding: 12px 8px;
+    border-radius: 12px;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  .uploadsText button:hover {
+    background-color: rgb(250, 250, 233);
+    color: grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .outputsContainer, .inputsContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.6%;
+    background-color: white;
+    padding: 8px;
+  }
+  .itemsContainer {
+    padding: 6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crochetImage0, .crochetImage1, .crochetImage2, .crochetImage3, .crochetImage4, .crochetImage5  {
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all ease 0.5s;
+  }
+  
+  .crochetImage0:hover, .crochetImage1:hover, .crochetImage2:hover, .crochetImage3:hover, .crochetImage4:hover, .crochetImage5:hover, .crochetImage6:hover {
+    transition: all ease 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .crochetImage2:hover {
+    transition: all ease 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .itemsContainer p {
+    margin: 16px 0px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .messageUs {
+    text-decoration: none;
+    margin-bottom: 12px;
+    color: white;
+    background-color: grey;
+    padding: 4px 6px;
+    border-radius: 50%;
+    opacity: 20%;
+    border: 0.5px solid white;
+  }
+  .messageUs:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+  .imageSliderContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imageSlider {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: 24px 50px;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 4px;
+  }
+  .imageSlider h2 {
+    padding: 14px;
+    color: beige;
+    margin-right: 20px;
+  }
+  .imageSlider p {
+    text-align: left;
+    padding: 12px;
+    color: white;
+  }
+  .slider1 {
+    transform: skewY(0deg);
+    width: 100%;
+    height: 100%;
+    background-image: url('../gifs/sunflower-gif.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(55, 55, 55);
+    padding: 0px;
+    margin: 0px;
+  }
+  .slider2 {
+    transform: skewY(90deg);
+    width: 0%;
+    height: 100%;
+    background-image: url('../gifs/forgetmenot-gif.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(55, 55, 55);
+    padding: 0px;
+    margin: 0px;
+  }
+  .showSlide {
+    transform: skewY(0deg);
+    width: 100%;
+  }
+  .hideSlide {
+    transform: skewY(-90deg);
+    width: 0%;
+  }
+  .buttonContainer {
+    padding: 8px;
+    gap: 12px;
+  }
+  .buttonContainer button {
+    margin: 4px;
+    padding: 12px 14px;
+    background-color: white;
+    color: grey;
+    border-radius: 50%;
+    border: 1px solid grey;
+  }
+  .buttonContainer button:hover {
+    background-color: rgb(173, 173, 173);
+    border: 1px solid white;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .overlay3 {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  .clickContainer {
+    width: 350px;
+    height: 500px;
+    background-color:  white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .clickContainer img {
+    background-size: cover;
+    border-radius: 4px;
+    width: 50%;
+    height: auto;
+    background-color: green;
+  }
+  .clickContainerImage {
+    background-color: lavender;
+    align-self: center;
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divisionContainer {
+    padding: 0.5px;
+    background-color: grey;
+    margin: 12px 12px;
+  }
+  .clickContainer p {
+    margin: 12px 24px;
+    font-family: garamond;
+  }
+  .clickContainer span {
+    padding: 4px;
+    margin: 0px;
+    margin-right: 12px;
+    align-self: flex-end;
+    color: red;
+  }
+}
